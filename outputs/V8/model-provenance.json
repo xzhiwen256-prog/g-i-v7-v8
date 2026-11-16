@@ -1,0 +1,23 @@
+{
+  "model_sha256": "66ff4acd68aed070f48dc0841d53e1c8d28a88263c2184cb7413a1a88aa41b54",
+  "source": "C:\\Users\\Colin\\Documents\\Codex\\2026-10-22\\g-i\\outputs\\V7\\verification\\pose-coverage-20261111-195614\\roboflow_v7\\training_v1\\runs\\finetune02\\weights\\best.pt",
+  "backend_policy": "same as V7",
+  "approved_trt_shapes": [
+    [
+      1,
+      3,
+      384,
+      640
+    ],
+    [
+      1,
+      3,
+      640,
+      640
+    ]
+  ],
+  "full1280_approved": false,
+  "default_current_profile_comparable": true,
+  "new_model_accuracy_superiority": false,
+  "additional_filter_policy": "user_selected_mixed_friendly_outline_veto_20261113"
+}

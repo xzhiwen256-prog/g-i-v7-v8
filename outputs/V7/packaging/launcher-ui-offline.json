@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "fresh_computer_consent_unchecked",
+      "passed": true
+    },
+    {
+      "name": "start_within_window",
+      "passed": true,
+      "mapped": 1,
+      "top": 670,
+      "height": 41,
+      "root_top": 83,
+      "root_height": 650,
+      "requested": 41
+    },
+    {
+      "name": "vc_repair_within_window",
+      "passed": true,
+      "mapped": 1,
+      "top": 670,
+      "height": 41,
+      "root_top": 83,
+      "root_height": 650,
+      "requested": 41
+    },
+    {
+      "name": "mode_within_window",
+      "passed": true,
+      "mapped": 1,
+      "top": 554,
+      "height": 23,
+      "root_top": 83,
+      "root_height": 650,
+      "requested": 23
+    },
+    {
+      "name": "no_consent_no_worker",
+      "passed": true
+    },
+    {
+      "name": "consent_only_stages_worker_no_activation",
+      "passed": true
+    }
+  ],
+  "native_activation_attempts": [],
+  "game_or_hid_or_model_started": false,
+  "actual_windows_uac_tested": false,
+  "actual_customer_hardware_tested": false
+}

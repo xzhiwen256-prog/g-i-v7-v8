@@ -1,0 +1,76 @@
+{
+  "model_sha256": "66ff4acd68aed070f48dc0841d53e1c8d28a88263c2184cb7413a1a88aa41b54",
+  "gpu_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "compute_capability": [
+    12,
+    0
+  ],
+  "tensorrt": "10.9.0.34",
+  "names": {
+    "0": "enemy",
+    "1": "enemy_head"
+  },
+  "engines": [
+    {
+      "shape": [
+        1,
+        3,
+        640,
+        640
+      ],
+      "file": "best-fp16-640x640.engine",
+      "sha256": "cd8501e48ea82516db324fe2c8c95875e079d9cfcdcd6d0e83e88ee11831c7ad",
+      "build_seconds": 487.3,
+      "validation": {
+        "passed": true,
+        "cases": 14,
+        "source": "verification/model-only-align-20261112/attempt2/parity.json",
+        "report_sha256": "8e77c5fa0c20a0402799718a6f568ab4108c86cb2816fc486b6c62e32853a7a2",
+        "model_sha256": "66ff4acd68aed070f48dc0841d53e1c8d28a88263c2184cb7413a1a88aa41b54",
+        "numerical_parity": true,
+        "speedup": 3.07526052121819
+      }
+    },
+    {
+      "shape": [
+        1,
+        3,
+        736,
+        1280
+      ],
+      "file": "best-fp16-736x1280.engine",
+      "sha256": "96942afd351c0f204468303cede83eb7de67cbeb9177a70dc23ccb435bd2b733",
+      "build_seconds": 461.33,
+      "validation": {
+        "passed": false,
+        "cases": 14,
+        "source": "verification/model-only-align-20261112/attempt2/parity.json",
+        "report_sha256": "8e77c5fa0c20a0402799718a6f568ab4108c86cb2816fc486b6c62e32853a7a2",
+        "model_sha256": "66ff4acd68aed070f48dc0841d53e1c8d28a88263c2184cb7413a1a88aa41b54",
+        "numerical_parity": false,
+        "speedup": 1.977029117528074
+      },
+      "build_attempt": 2
+    },
+    {
+      "shape": [
+        1,
+        3,
+        384,
+        640
+      ],
+      "file": "best-fp16-384x640.engine",
+      "sha256": "a5904597f1c3fb8757db418374421f1664f073ba694ba9524867a83f4e75a338",
+      "build_seconds": 460.45,
+      "validation": {
+        "passed": true,
+        "cases": 14,
+        "source": "verification/model-only-align-20261112/attempt2/parity.json",
+        "report_sha256": "8e77c5fa0c20a0402799718a6f568ab4108c86cb2816fc486b6c62e32853a7a2",
+        "model_sha256": "66ff4acd68aed070f48dc0841d53e1c8d28a88263c2184cb7413a1a88aa41b54",
+        "numerical_parity": true,
+        "speedup": 2.6336715133092268
+      }
+    }
+  ]
+}

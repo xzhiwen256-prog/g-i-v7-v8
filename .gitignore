@@ -1,0 +1,31 @@
+# Local environments and development dependencies
+/work/
+/licensing/
+.venv/
+venv/
+# Local state, historical datasets and diagnostic captures
+**/verification/
+**/.backups/
+**/__pycache__/
+**/.settings/*
+!**/.settings/adaptation-profile.json
+!**/.settings/capture-profile.json
+!**/.settings/foreground-profile.json
+!**/.settings/game-calibration.json
+!**/.settings/motion-profile.json
+!**/.settings/friend-guard.json
+*.pyc
+*.pyo
+*.log
+python-path.txt
+python-cpu-path.txt
+# Credentials and private machine state
+.env
+.env.*
+*.pem
+*.pfx
+*.p12
+*.key
+*.sqlite
+*.sqlite3
+*.db

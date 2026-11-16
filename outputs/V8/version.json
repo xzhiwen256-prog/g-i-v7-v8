@@ -1,0 +1,45 @@
+{
+  "version": "V8",
+  "based_on": "current V7",
+  "stage": "new_model_with_user_selected_friend_outline_guard",
+  "runtime_differences": "new model/version plus mixed-friendly-outline veto and disclosed UI toggle; current user-selected control parameters retained",
+  "backend_policy": "auto, same V7 code",
+  "current_profile_equal_to_v7": false,
+  "current_profile_comparable": false,
+  "current_profile": {
+    "scope": "center",
+    "input_size": 640,
+    "confidence": 0.3
+  },
+  "model_sha256": "66ff4acd68aed070f48dc0841d53e1c8d28a88263c2184cb7413a1a88aa41b54",
+  "approved_engine_shapes": [
+    [
+      1,
+      3,
+      384,
+      640
+    ],
+    [
+      1,
+      3,
+      640,
+      640
+    ]
+  ],
+  "noncomparable_mode": "16:9 fullscreen input1280 (736x1280 tensor): failed fixed-gate parity twice; engine not approved; PyTorch fallback",
+  "validation_report": "verification/model-only-align-20261112/attempt2/parity.json",
+  "tests": 21,
+  "source_protected_unchanged": 80,
+  "live_game_verified": false,
+  "automatic_recognition_start": false,
+  "automatic_follow_start": false,
+  "automatic_trigger_start": false,
+  "all_three_engines_validated": false,
+  "accuracy_improvement_claimed": false,
+  "replaces_historical_fp32_only_build": true,
+  "comparison_model_only": false,
+  "friend_guard_enabled": true,
+  "friend_guard_tests": 26,
+  "friend_guard_incident_confirmed": false,
+  "current_guard_verification": "verification/friend-guard-20261113/final_verification.json"
+}

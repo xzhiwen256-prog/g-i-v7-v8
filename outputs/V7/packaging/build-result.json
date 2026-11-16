@@ -1,0 +1,17 @@
+{
+  "output": "C:\\Users\\Colin\\Desktop\\v\\V7客户U盘完整包",
+  "files": 22280,
+  "bytes": 8237743421,
+  "largest_file_bytes": 1971797024,
+  "manifest_sha256": "e8956f240f9d45ffaf328951ca42d1de3013a5e0ec5783499acc91baa03bfe46",
+  "revision": "desktop-freeze-20261107",
+  "no_private_artifacts": true,
+  "original_sources_unchanged": true,
+  "runtime_native_model_or_hid_executed": false,
+  "customer_game_input_verified": false,
+  "finalized_templates": [
+    "launcher.py",
+    "payload/runtime_probe.py",
+    "使用说明.txt"
+  ]
+}

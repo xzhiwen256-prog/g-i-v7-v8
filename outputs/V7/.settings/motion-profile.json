@@ -1,0 +1,19 @@
+{
+  "aim_region": "original",
+  "gain": 2.68,
+  "step_limit": 480,
+  "aim_height_ratio": 0.12,
+  "response_ms": 6,
+  "chase_strength": 6.0,
+  "predictive": true,
+  "enemy_filter": true,
+  "soft_assist": false,
+  "tolerance_px": 3.0,
+  "pause_on_fire": false,
+  "fire_release_ms": 0,
+  "control_algorithm": "legacy",
+  "pd_kp": 1.0,
+  "pd_kd": 0.25,
+  "manual_fire_priority": false,
+  "paced_corrections": true
+}

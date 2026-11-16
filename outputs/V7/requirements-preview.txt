@@ -1,0 +1,18 @@
+numpy==1.26.4
+opencv-python==4.10.0.84
+Pillow==11.0.0
+mss==9.0.2
+dxcam==0.3.0; platform_system == "Windows"
+comtypes==1.4.17; platform_system == "Windows"
+ultralytics==8.3.28
+pandas==2.2.3
+matplotlib==3.9.2
+seaborn==0.13.2
+scipy==1.14.1
+GitPython==3.1.43
+psutil==6.1.0
+PyYAML==6.0.2
+requests==2.32.3
+tqdm==4.67.0
+packaging==24.2
+setuptools==78.1.0

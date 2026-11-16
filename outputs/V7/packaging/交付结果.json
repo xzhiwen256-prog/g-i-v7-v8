@@ -1,0 +1,21 @@
+{
+  "completed_at": "2026-11-07T15:42:19.890737+08:00",
+  "status": "built_and_offline_verified_customer_candidate",
+  "release_id": "V7-USB-20261107-freeze241-r1",
+  "folder": "C:\\Users\\Colin\\Desktop\\v\\V7客户U盘完整包",
+  "entrypoint": "C:\\Users\\Colin\\Desktop\\v\\V7客户U盘完整包\\开始.cmd",
+  "files": 22280,
+  "gib": 7.672,
+  "package_manifest_sha256": "e8956f240f9d45ffaf328951ca42d1de3013a5e0ec5783499acc91baa03bfe46",
+  "source_revision": "desktop-freeze-20261107",
+  "source_tests": 241,
+  "packaging_tests": 24,
+  "original_sources_unchanged": true,
+  "private_caches_included": false,
+  "installation_consent_included": false,
+  "source_dependency_paths_required": false,
+  "actual_customer_game_or_hid_verified": false,
+  "driver_installation_requires_explicit_consent": true,
+  "windows_security_settings_disabled": false,
+  "edition": "V7 ordinary, no added card authentication"
+}

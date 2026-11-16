@@ -1,0 +1,12 @@
+{
+  "game": "VALORANT",
+  "sensitivity": 0.3,
+  "resolution": [2560, 1440],
+  "zoomed": false,
+  "horizontal_fov_degrees": 103,
+  "degrees_per_count_at_sens1": 0.07,
+  "step_limit": 240,
+  "method": "theoretical center-of-screen estimate; not measured in game",
+  "calibrated_in_game": false,
+  "reference": "https://github.com/Pratilectron/valotrainer"
+}

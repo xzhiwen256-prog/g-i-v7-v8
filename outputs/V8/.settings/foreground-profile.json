@@ -1,0 +1,6 @@
+{
+  "allowed_executable_names": [
+    "VALORANT-Win64-Shipping.exe"
+  ],
+  "note": "Fail closed. Verify the actual national-server foreground executable; if different, add its exact basename."
+}

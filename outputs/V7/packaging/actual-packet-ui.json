@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "actual_bundled_python": true,
+  "actual_customer_launcher": true,
+  "actions_visible": true,
+  "consent_default_unchecked": true,
+  "activation_attempts": [],
+  "driver_or_game_or_model_started": false
+}

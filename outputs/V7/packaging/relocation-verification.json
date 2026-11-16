@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "root": "C:\\Users\\Colin\\Desktop\\v\\V7客户U盘完整包\\payload\\runtime",
+  "sys_path": [
+    "C:\\Users\\Colin\\Desktop\\v\\V7客户U盘完整包\\payload\\app\\vendor\\yolov5",
+    "C:\\Users\\Colin\\Desktop\\v\\V7客户U盘完整包\\payload\\app",
+    "C:\\Users\\Colin\\Desktop\\v\\V7客户U盘完整包\\payload\\runtime",
+    "C:\\Users\\Colin\\Desktop\\v\\V7客户U盘完整包\\payload\\runtime\\Lib",
+    "C:\\Users\\Colin\\Desktop\\v\\V7客户U盘完整包\\payload\\runtime\\DLLs",
+    "C:\\Users\\Colin\\Desktop\\v\\V7客户U盘完整包\\payload\\runtime\\p"
+  ],
+  "tcl_library": "C:\\Users\\Colin\\Desktop\\v\\V7客户U盘完整包\\payload\\runtime\\tcl\\tcl8.6",
+  "torch_version": "2.7.1+cu128",
+  "tensorrt_version": "10.9.0.34",
+  "model_modules_loaded": [],
+  "blocked_activation_attempts": [],
+  "preview_imported_without_device": true,
+  "developer_environment_required": false,
+  "customer_game_input_verified": false
+}

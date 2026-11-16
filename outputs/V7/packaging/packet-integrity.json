@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "files_verified": 22280,
+  "bytes": 8237743421,
+  "gib": 7.672,
+  "manifest_sha256": "e8956f240f9d45ffaf328951ca42d1de3013a5e0ec5783499acc91baa03bfe46",
+  "all_paths_relative": true,
+  "largest_relative_path": 151,
+  "runtime_or_hid_or_game_activated": false,
+  "customer_game_input_verified": false
+}

@@ -1,0 +1,13 @@
+# Preserve source bytes and line endings in the private archive.
+* -text
+*.pt binary
+*.onnx binary
+*.engine binary
+*.dll binary
+*.exe binary
+*.sys binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary
