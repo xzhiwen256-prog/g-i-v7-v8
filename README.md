@@ -1,27 +1,64 @@
-# V7 / V8 — private source and model snapshot
+# V7 / V8 私有项目归档
 
-This repository archives the current V7 and unfinished V8 versions on 2026-11-16.
+本仓库保存 2026-11-16 上传的 V7 与 V8 半成品，包括代码、模型、现有 TensorRT 引擎及输入后端配套文件。**不是免安装自包含发行版，也不代表已在其他电脑验收。**
 
-## Contents
-- `Start-V7.cmd`, `Start-V8.cmd`: version launchers.
-- `outputs/V7`, `outputs/V8`: application sources, documentation, dependency specifications, models and existing TensorRT artifacts.
-- Input backend support files, third-party code and their existing notices/licenses.
-- Selected parameter profiles only; identity, API and diagnostic settings are excluded.
-- `FILE_MANIFEST.json`: SHA-256 hashes of the archived source files.
+## 从这里开始
 
-## Not a self-contained release
-Python virtual environments and installed GPU libraries are not bundled. Restore a compatible runtime and configure interpreter paths before use. Existing machine-specific Python path files are intentionally excluded.
+**完整指南：[运行环境、安装与配置流程](docs/RUNTIME_SETUP.md)**（2026-11-17 更新）
 
-TensorRT artifacts are preserved as-is; their presence does not guarantee compatibility with another GPU/runtime. V8 remains unfinished. In particular, the full-screen TensorRT comparison has not passed its gate, and the recoil-jitter issue is not claimed resolved. See each version's existing documentation for its limitations.
+指南包括：
+- 原机环境版本与新电脑的前置条件；
+- 克隆私有仓库、创建一套共享 Python 环境、安装 GPU/CPU 依赖；
+- 安装 TensorRT、配置两版解释器路径、检查安装结果；
+- 模型校验、引擎兼容门禁、启动前的权限与系统变更说明；
+- 参数保存、实际推理后端确认、日志位置和故障排查；
+- 目前不能当作可用部署步骤的历史工具。
 
-## Intentionally not uploaded
-- `work/`: local Python environments and dependencies.
-- `licensing/`: legacy licensing databases and secrets.
-- All `verification/` trees: training datasets, checkpoints, recorded frames, test history and historical diagnostic artifacts.
-- Logs, caches, backups, runtime sessions and identity/API settings.
-- `python-path.txt` and `python-cpu-path.txt`: local absolute interpreter paths.
+建议按 **准备电脑 → 下载仓库 → 安装环境 → 配置路径 → 检查依赖 → 查看设置 → 审阅输入后端权限 → 人工启动** 的顺序操作。不要一上来连续双击所有启动或安装脚本。
 
-These exclusions apply only to this upload snapshot. No original project files were deleted or modified. This repository is an archive, not a new packaging/compatibility validation.
+## 环境概览
 
-## Third-party material
-Existing upstream licenses and notices are retained. Private storage does not grant new redistribution rights. Check those terms before sharing the repository or distributing binaries.
+| 项目 | 原机记录 / 安装基线 |
+|---|---|
+| 平台 | Windows x64；原输入后端文档记录 Windows 11 |
+| Python | 原环境 3.12.14；新建环境使用 Python 3.12 x64 |
+| PyTorch / torchvision | 2.7.1+cu128 / 0.22.1+cu128 |
+| TensorRT / ONNX | 10.9.0.34（cu12）/ 1.17.0 |
+| 原引擎 GPU | NVIDIA GeForce RTX 5060 Laptop GPU，计算能力 12.0 |
+| .NET 输入后台 | 随版本目录携带 .NET 10 runtime；不等于驱动已安装 |
+
+**有 TensorRT 文件不等于当前正在使用 TensorRT。** GPU、运行时、模型、引擎哈希和验证记录必须满足程序门禁；其他电脑可能回退 PyTorch。完整兼容性说明见指南。
+
+## 目录
+
+```text
+Start-V7.cmd                 V7 正常启动入口
+Start-V8.cmd                 V8 正常启动入口
+docs/RUNTIME_SETUP.md        运行环境与完整配置流程
+outputs/V7/                 V7 源码、配套文件和模型
+outputs/V8/                 V8 源码、配套文件和模型
+  weights/best.pt            对应版本的模型权重
+  weights/tensorrt/          已归档的引擎、ONNX 与 engines.json
+  hid/                      输入后台、便携 .NET runtime 与上游说明
+  vendor/                   随附第三方源码
+  .settings/                仅选取的参数 profile；不是完整个人状态
+FILE_MANIFEST.json           原上传快照中 outputs 文件的 SHA-256 清单
+```
+
+`v5_runtime.py` 是两版当前使用的内部模块名，不是另外一份需要删除的 V5 版本。
+
+## 先读限制
+
+- **正常启动不是只打开界面**：可能请求管理员权限、启动/复用输入后台、创建虚拟设备，并按上游实现安装驱动及本机信任证书。首次运行前请阅读指南的权限说明。
+- V7/V8 不要同时运行；识别、跟随和扳机不应因安装或检查环境被自动开启。
+- V8 仍是半成品；后坐力相关抖动未宣称解决，新模型准确率未宣称普遍提高。
+- V8 友方轮廓冲突保护可能增加漏检；两版当前 profile 并非只换模型的等条件比较。
+- V8 的 736×1280 引擎没有通过历史一致性门禁；不能因为文件存在就强行启用。
+- 历史离线录像入口、V7 引擎构建入口存在静态导入不一致；见指南，不要按旧说明视为已可运行。
+- 各版旧 README、交付说明和元数据中保留了原机绝对路径、历史验证结论及未上传的 verification 链接。它们是历史记录；跨电脑安装以本指南为准。
+
+## 未上传内容
+
+虚拟环境、训练集和训练检查点、全部历史 verification 目录、录屏/截图诊断、日志、缓存、备份、个人身份/API 配置、本机解释器路径以及旧 licensing 数据库/密钥均未上传。本地原项目未因归档而删除或修改。
+
+已有上游许可证及声明保留；私有存储不等于取得新的分发许可。仅在有权使用的环境中操作，不以关闭系统安全保护或规避第三方安全策略作为配置步骤。
